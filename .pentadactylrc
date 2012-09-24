@@ -1,0 +1,30 @@
+"hg6825
+
+loadplugins '\.(js|penta)$'
+group user
+
+" vim: set ft=pentadactyl:
+hi StatusLine -a font-size: 12pt;
+hi CompItem -a font-size: 12pt;
+hi CmdLine -a font-size: 14pt;
+
+" no need to use shift
+" nmap ; :
+
+" let GMail be
+set passkeys+=mail.google.com:yjk#<CR>,gi
+
+" Hints in home row
+set hintkeys='asdfg;lkjh'
+highlight -a Hint text-transform: uppercase;
+
+" pinboard
+" bmark -keyword pin "javascript:if(document.getSelection){s=document.getSelection();}else{s='';};document.location='https://pinboard.in/add?next=same&url='+encodeURIComponent(location.href)+'&description='+encodeURIComponent(s)+'&title='+encodeURIComponent(document.title)"
+map -ex gp :open pin
+
+" klip
+" bmark -keyword klip "javascript:var l = window.location;function $klipme_install(){if(window.MooTools || window.Prototype){alert('Sorry, some JavaScript in the page is not compatible with this Bookmarklet. We will improve this later. Thanks.');return;}var d = document;try {if (!d.body) throw (0);var s = d.createElement('script');s.setAttribute('id', 'klipme_loader');s.setAttribute('type', 'text/javascript');s.setAttribute('charset', 'utf-8');s.setAttribute('src', 'http://www.klip.me/sendtokindle/bookmarklet?key=139e4c195d272cd&v=3.0.0.250&t=' + (new Date().getTime()));d.body.appendChild(s);} catch (e) {alert('Please wait until the page has loaded.');d.getElementById('klipme_loader').destroy ();}}if (l.host.indexOf('klip.me')>=0 || (l.protocol!='http:' && l.protocol!='https:')) l.href='http://www.klip.me/sendtokindle/options?key=139e4c195d272cd&v=3.0.0.250&url=' + encodeURIComponent(l.href);else if (document.getElementById('klipme_loader')===null) $klipme_install();else if (typeof window['$klipme_execute'] !== 'undefined') window['$klipme_execute'] ();"
+map -ex gk :open klip
+
+"bmark -keyword lists http://www.twitter.com/alemacgo/lists
+map -ex gl :tabopen lists
