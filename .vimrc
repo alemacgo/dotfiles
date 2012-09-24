@@ -26,6 +26,7 @@ set history=100
 call pathogen#infect()
 
 " determine indentation and colors with filetype
+filetype on
 filetype plugin indent on
 
 " *** whitespace **************************************************************
@@ -119,7 +120,7 @@ set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " ...don't see whitespace in html and xml docs
-autocmd filetype html,xml set nolist
+autocmd Filetype html,xml set nolist
 
 " when in diff mode, fill empty lines
 set fillchars=diff:⣿
@@ -204,5 +205,10 @@ set statusline+=)
 set statusline+=\ (%p%%\ of\ %L,\ col\ %2c)
 
 " *** Specific stuff ***
+
+" LaTeX
 " pdflatex the current doc
-noremap <leader>p :w\|!pdflatex %<return>
+autocmd Filetype tex noremap <leader>p :w\|!pdflatex %<return><return>
+autocmd Filetype tex inoremap tttt \texttt{
+autocmd Filetype tex inoremap ttti \textit{
+autocmd Filetype tex inoremap tttb \textit{
