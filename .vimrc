@@ -209,6 +209,7 @@ set statusline+=\ (%p%%\ of\ %L,\ col\ %2c)
 " LaTeX
 " pdflatex the current doc
 autocmd Filetype tex noremap <leader>p :w\|!pdflatex %<return><return>
+autocmd Filetype tex noremap <leader>m :w\|!pdflatex tesis.tex%<return><return>
 autocmd Filetype tex inoremap tttt \texttt{
 autocmd Filetype tex inoremap ttti \textit{
 autocmd Filetype tex inoremap tttb \textit{
