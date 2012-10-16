@@ -20,3 +20,6 @@ cp -r /Users/alejandro/.vim/doc .vim/
 cp -r /Users/alejandro/.vim/ftplugin .vim/
 cp -r /Users/alejandro/.vim/plugin .vim/
 cp -r /Users/alejandro/.vim/syntax .vim/
+
+mkdir -p usr/local/bin
+cp /usr/local/bin/mvim usr/local/bin

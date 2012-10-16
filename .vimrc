@@ -141,6 +141,7 @@ set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest " compiled object files
 set wildignore+=*.sw?                            " Vim swap files
 set wildignore+=*.DS_Store                       " OS X
 set wildignore+=*.pyc,*.class                    " Python byte code
+set wildignore+=*.dSYM                           " OpenGL
 
 " quickly edit .vimrc
 nmap <silent> <leader>. :e $MYVIMRC<return>
@@ -209,7 +210,7 @@ set statusline+=\ (%p%%\ of\ %L,\ col\ %2c)
 " LaTeX
 " pdflatex the current doc
 autocmd Filetype tex noremap <leader>p :w\|!pdflatex %<return><return>
-autocmd Filetype tex noremap <leader>m :w\|!pdflatex tesis.tex%<return><return>
+autocmd Filetype tex noremap <leader>m :w\|!pdflatex tesis.tex<return><return>
 autocmd Filetype tex inoremap tttt \texttt{
 autocmd Filetype tex inoremap ttti \textit{
 autocmd Filetype tex inoremap tttb \textit{
