@@ -12,6 +12,7 @@ mkdir -p .config/fish/
 cp /Users/alejandro/.config/fish/config.fish .config/fish/
 
 mkdir -p .vim
+cp /Users/alejandro/.vim/filetype.vim .vim/
 cp -r /Users/alejandro/.vim/autoload .vim/
 cp -r /Users/alejandro/.vim/bundle .vim/
 cp -r /Users/alejandro/.vim/colors .vim/
