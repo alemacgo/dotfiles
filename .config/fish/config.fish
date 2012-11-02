@@ -8,3 +8,6 @@ function ga; git add $argv; end
 function gb; git branch $argv; end
 function gd; git diff $argv; end
 function go; git checkout $argv; end
+function gp; git push $argv; end
+
+function sha1; openssl sha1 $argv; end
