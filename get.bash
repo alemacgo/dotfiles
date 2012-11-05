@@ -5,6 +5,8 @@ cp /Users/alejandro/.pentadactylrc .
 cp /Users/alejandro/.gitconfig .
 cp /Users/alejandro/.gitignore .
 
+brew list > homebrew.list
+
 mkdir -p .ssh
 cp /Users/alejandro/.ssh/id_dsa.pub .ssh
 

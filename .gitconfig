@@ -1,4 +1,5 @@
 [core]
+    #editor = /Applications/MacVim.app/Contents/MacOS/Vim -f -g
     editor = /usr/bin/vim
     excludesfile = /Users/alejandro/.gitignore
     autocrlf = false
