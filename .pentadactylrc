@@ -26,5 +26,9 @@ map -ex gp :open pin
 " bmark -keyword klip "javascript:var l = window.location;function $klipme_install(){if(window.MooTools || window.Prototype){alert('Sorry, some JavaScript in the page is not compatible with this Bookmarklet. We will improve this later. Thanks.');return;}var d = document;try {if (!d.body) throw (0);var s = d.createElement('script');s.setAttribute('id', 'klipme_loader');s.setAttribute('type', 'text/javascript');s.setAttribute('charset', 'utf-8');s.setAttribute('src', 'http://www.klip.me/sendtokindle/bookmarklet?key=139e4c195d272cd&v=3.0.0.250&t=' + (new Date().getTime()));d.body.appendChild(s);} catch (e) {alert('Please wait until the page has loaded.');d.getElementById('klipme_loader').destroy ();}}if (l.host.indexOf('klip.me')>=0 || (l.protocol!='http:' && l.protocol!='https:')) l.href='http://www.klip.me/sendtokindle/options?key=139e4c195d272cd&v=3.0.0.250&url=' + encodeURIComponent(l.href);else if (document.getElementById('klipme_loader')===null) $klipme_install();else if (typeof window['$klipme_execute'] !== 'undefined') window['$klipme_execute'] ();"
 map -ex gk :open klip
 
+" instapaper
+"bmark -keyword instapaper "javascript:function%20iprl5(){var%20d=document,z=d.createElement('scr'+'ipt'),b=d.body,l=d.location;try{if(!b)throw(0);d.title='(Saving...)%20'+d.title;z.setAttribute('src',l.protocol+'//www.instapaper.com/j/6SU5APuPPwvi?u='+encodeURIComponent(l.href)+'&t='+(new%20Date().getTime()));b.appendChild(z);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iprl5();void(0)"
+map -ex gr :open instapaper
+
 "bmark -keyword lists http://www.twitter.com/alemacgo/lists
 map -ex gl :tabopen lists

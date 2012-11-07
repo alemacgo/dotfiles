@@ -7,8 +7,8 @@ boost
 c-ares
 cairo
 cmake
+dromeaudio
 faac
-ffmpeg
 flac
 fontconfig
 freetype
@@ -16,7 +16,6 @@ gdk-pixbuf
 gettext
 glib
 gnutls
-gtk+
 htop-osx
 jam
 jasper
@@ -29,11 +28,9 @@ libgpg-error
 libmikmod
 libogg
 libpng
-libquicktime
 libtasn1
 libtiff
 libtool
-libvorbis
 mtr
 orc
 p11-kit
@@ -42,10 +39,7 @@ pcre
 physfs
 pixman
 pkg-config
-schroedinger
 sdl
-sdl_sound
-speex
 texi2html
 tmux
 tree

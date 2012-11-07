@@ -1,6 +1,12 @@
 if status --is-login
-    set PATH $PATH /usr/local/texlive/2012basic/bin/universal-darwin/
-    set PATH $PATH /usr/local/sbin/
+    set PATH /usr/local/bin
+    set PATH $PATH /usr/local/sbin
+    set PATH $PATH /usr/bin
+    set PATH $PATH /usr/sbin
+    set PATH $PATH /bin
+    set PATH $PATH /sbin
+    set PATH $PATH /usr/X11R6/bin
+    set PATH $PATH /usr/local/texlive/2012basic/bin/universal-darwin
 end
 
 function gs; git status $argv; end
