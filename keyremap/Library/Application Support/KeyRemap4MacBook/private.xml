@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Shift + Ctrl_L = Option + Delete</name>
+        <identifier>private.long_delete</identifier>
+        <autogen>--KeyToKey-- KeyCode::CONTROL_L,
+                              ModifierFlag::SHIFT_R,
+                              KeyCode::DELETE,
+                              ModifierFlag::OPTION_R
+        </autogen>
+    </item>
+    <item>
+        <name>Shift + Ctrl_L = Ctrl_L + W</name>
+        <identifier>private.long_delete_vim</identifier>
+        <autogen>--KeyToKey-- KeyCode::CONTROL_L,
+                              ModifierFlag::SHIFT_R,
+                              KeyCode::W,
+                              ModifierFlag::CONTROL_L
+        </autogen>
+    </item>
+</root>
