@@ -10,10 +10,12 @@ if status --is-login
 end
 
 function gs; git status $argv; end
+function gc; git commit -a $argv; end
 function ga; git add $argv; end
 function gb; git branch $argv; end
 function gd; git diff $argv; end
 function go; git checkout $argv; end
 function gp; git push $argv; end
+function grep; egrep --color $argv; end
 
 function sha1; openssl sha1 $argv; end

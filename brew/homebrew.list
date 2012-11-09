@@ -11,6 +11,7 @@ dromeaudio
 faac
 flac
 fontconfig
+freealut
 freetype
 gdk-pixbuf
 gettext
