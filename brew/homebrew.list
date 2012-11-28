@@ -24,6 +24,7 @@ gmp
 gnu-prolog
 gnutls
 gobject-introspection
+graphviz
 gtk+
 htop-osx
 intltool

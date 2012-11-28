@@ -21,6 +21,12 @@ set showcmd
 " show insert, visual mode
 set showmode
 
+" show matching parenthesis when closing
+set showmatch
+
+" don't 'go back' a character when switching between insert and normal modes
+inoremap <silent> <Esc> <Esc>`^
+
 " increase command memory
 set history=100
 
@@ -40,6 +46,7 @@ set textwidth=79
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set shiftround
 
 " spaces, not tabs
 set expandtab
@@ -100,7 +107,7 @@ map <Enter> o<ESC>
 map <S-Enter> O<ESC>
 
 " *** visualization **********************************************************
-colorscheme Tomorrow-Night
+colorscheme jellybeans
 
 " line numbers
 set nu
@@ -209,10 +216,58 @@ set statusline+=\ (%p%%\ of\ %L,\ col\ %2c)
 
 " *** Specific stuff ***
 
+"nnoremap ci- bct_
+"nnoremap di- bdt_
+"nnoremap yi- byt_
+"nnoremap ca- bcf_
+"nnoremap da- bdf_
+"nnoremap ya- byf_
+
 " LaTeX
+" dot (Graphviz)
+autocmd Filetype dot noremap <leader>d :w\|!dot -Tpdf % -o out.pdf<return>
+
 " pdflatex the current doc
 autocmd Filetype tex noremap <leader>p :w\|!pdflatex %<return><return>
 autocmd Filetype tex noremap <leader>m :w\|!pdflatex tesis.tex<return><return>
+
 "autocmd Filetype tex inoremap tttt \texttt{
 "autocmd Filetype tex inoremap ttti \textit{
 "autocmd Filetype tex inoremap tttb \textit{
+
+" --------
+" move lines downward
+nnoremap - ddp
+
+" move lines upward
+" [doesn't work with the first line]
+nnoremap _ ddkP
+
+" fast capitalize, no need to hold shift
+" [only works inside the word]
+inoremap <c-u> <esc>viwU<esc>ea
+
+let mapleader=","
+
+" alternative delete line
+nnoremap <leader>d dd
+
+" edit vimrc fast
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+" source vimrc fast
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+let maplocalleader="\\"
+
+" typos
+iabbrev waht what
+iabbrev tehn then
+iabbrev qeu que
+
+" abbreviations
+iabbrev @@ alejandro@magia.se
+
+" don't use 0, $
+nnoremap 0 <nop>
+nnoremap $ <nop>

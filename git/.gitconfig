@@ -21,3 +21,20 @@
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   type = cat-file -t
   dump = cat-file -p
+
+[merge]
+    tool = diffmerge
+[mergetool]
+    keepBackup = false
+    prompt = false
+[mergetool "diffmerge"]
+    cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+    trustExitCode = true
+
+[diff]
+    tool = vimdiff
+    guitool = gvimdiff
+[difftool]
+    prompt = false
+[difftool "gvimdiff"]
+      path = /usr/local/bin/mvimdiff
