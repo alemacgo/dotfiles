@@ -30,7 +30,6 @@ cp /Users/alejandro/.config/fish/config.fish fish/.config/fish/
 
 mkdir -p usr/local/bin
 cp /usr/local/bin/mvim usr/local/bin
-cp /usr/local/bin/mvimdiff usr/local/bin
 
 mkdir -p 'keyremap/Library/Application Support/KeyRemap4MacBook'
 cp '/Users/alejandro/Library/Application Support/KeyRemap4MacBook/private.xml' 'keyremap/Library/Application Support/KeyRemap4MacBook'

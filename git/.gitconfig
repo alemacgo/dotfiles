@@ -32,9 +32,8 @@
     trustExitCode = true
 
 [diff]
-    tool = vimdiff
-    guitool = gvimdiff
+    tool = mvimdiff
 [difftool]
     prompt = false
-[difftool "gvimdiff"]
-      path = /usr/local/bin/mvimdiff
+[difftool "mvimdiff"]
+    cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
