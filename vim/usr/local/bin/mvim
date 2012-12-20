@@ -59,7 +59,7 @@ esac
 
 # Last step:  fire up vim.
 if [ "$gui" ]; then
-  if $tabs && [[ `$binary --serverlist` = "VIM" ]] && [[ $# > 0 ]]; then
+  if $tabs && [[ `$binary --serverlist` = "VIM" ]]; then
     exec "$binary" -g $opts --remote-tab-silent ${1:+"$@"}
   else
     exec "$binary" -g $opts ${1:+"$@"}

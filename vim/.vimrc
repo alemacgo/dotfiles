@@ -152,9 +152,6 @@ set wildignore+=*.DS_Store                       " OS X
 set wildignore+=*.pyc,*.class                    " Python byte code
 set wildignore+=*.dSYM                           " OpenGL
 
-" quickly edit .vimrc
-nmap <silent> <leader>. :e $MYVIMRC<return>
-
 " fastest save
 nmap <silent> <leader>a :w<return>
 
