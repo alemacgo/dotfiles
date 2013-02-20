@@ -5,4 +5,9 @@
         <identifier>private.mission_control_to_f3</identifier>
         <autogen>--KeyToKey-- KeyCode::MISSION_CONTROL, KeyCode::F3</autogen>
     </item>
+    <item>
+        <name>Launchpad to F4</name>
+        <identifier>private.launchpad_to_f4</identifier>
+        <autogen>--KeyToKey-- KeyCode::LAUNCHPAD, KeyCode::F4</autogen>
+    </item>
 </root>

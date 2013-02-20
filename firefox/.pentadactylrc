@@ -12,7 +12,7 @@ hi CmdLine -a font-size: 14pt;
 " nmap ; :
 
 " let GMail be
-set passkeys+=mail.google.com:yjk#<CR>,gi
+set passkeys+=mail.google.com:lyjk#<CR>,gi
 
 " Hints in home row
 set hintkeys='asdfg;lkjh'
