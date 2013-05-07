@@ -5,7 +5,7 @@
     autocrlf = false
 [user]
     email = alemacgo@gmail.com
-    name = Alejandro Machado
+	name = Alejandro Machado
 [color]
     diff = auto
     status = auto

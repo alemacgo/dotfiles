@@ -7,6 +7,7 @@ if status --is-login
     set PATH $PATH /sbin
     set PATH $PATH /usr/X11R6/bin
     set PATH $PATH /usr/texbin
+    set PATH $PATH /usr/local/share/python
     #set PATH $PATH /usr/local/texlive/2012basic/bin/universal-darwin
     #set -x PYTHONPATH /usr/local/lib/python2.7/site-packages $PYTHONPATH
 end

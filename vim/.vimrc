@@ -13,6 +13,9 @@ syntax enable
 
 set encoding=utf-8
 
+" always show weird line endings
+set fileformats=unix
+
 set shell=/bin/bash
 
 " display incomplete commands
@@ -231,6 +234,8 @@ autocmd Filetype tex noremap <leader>m :w\|!pdflatex tesis.tex<return><return>
 "autocmd Filetype tex inoremap tttt \texttt{
 "autocmd Filetype tex inoremap ttti \textit{
 "autocmd Filetype tex inoremap tttb \textit{
+
+autocmd Filetype html set textwidth=0
 
 " --------
 " move lines downward
