@@ -1,6 +1,7 @@
 aspell
 autoconf
 automake
+bdw-gc
 cmake
 doxygen
 faac
@@ -43,6 +44,7 @@ tbb
 texi2html
 tmux
 tree
+w3m
 wget
 x264
 xvid
